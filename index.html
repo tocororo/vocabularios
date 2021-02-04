@@ -1,0 +1,166 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabularios</title>
+    <style>
+        html,body{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            min-height: 65px;
+            background-color: #364076;
+            box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+            z-index: 2;
+            color: #fff;
+            padding: 8px 16px;
+            justify-content: space-between;
+        }
+        footer{
+            padding: 16px;
+            margin-top: 16px;
+            background-color: #363030;
+            color: #fff;
+        }
+        a{
+            color: #fff;
+        }
+        .row, .column{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .center{
+            justify-content: center;
+            align-items: center;
+        }
+        .around{
+            justify-content: space-around;
+            align-items: center;
+        }
+        .primary-color, .accent-color, .warn-color{
+            color: #fff;
+        }
+        .primary-color{
+            background-color: #364076;
+        }
+        .accent-color{
+            background-color: #707636;
+        }
+        .warn-color{
+            background-color: #cc2f13;
+        }
+        .w-100, .w-70, .w-50, .w-25{
+            min-width: 16em;
+        }
+        .w-100{
+            width: 100%;
+        }
+        .w-70{
+            width: 69%;
+        }
+        .w-50{
+            width: 48%;
+        }
+        .w-25{
+            width: 30%;
+        }
+        .m-1{
+            margin: 16px;
+        }
+        .btn{
+            background-color: transparent;
+            border-radius: 4px;
+            padding: 4px 8px;
+        }
+        .card{
+            display: flex;
+            flex-direction: column;
+            margin: 8px;
+            padding: 16px;
+            border-radius: 4px;
+            box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+        }
+        p{
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="row">
+        <img src="assets/sceiba-logo-tree.png" alt="SCEIBA" width="70">
+        <!-- <div class="row center">
+            <samp class="btn warn-color">></samp>
+        </div> -->
+    </nav>
+    <div class="row center">
+        <div class="card w-25 center">
+            <img src="assets/vb_logo.png" alt="" width="200">
+            <div class="w-100">
+                <h1>Editar Vocabularios</h1>
+                <p>
+                    Al acceder a esta opcion usted puede editar los vocabularios así como añadir nuevos, pero necesita permisos administrativos. Tenga presente que varios sistemas se conectan a él para obtener vocabularios.
+                </p>
+            </div>
+            <div class="row w-100 m-1">
+                <button class="btn"> Acceder </button>
+            </div>
+        </div>
+        <div class="card w-25 center">
+            <h1 style="font-size: 4.5em; margin-block-start: 1em;">Skosmos</h1>
+            <!-- <img src="assets/vocabs.svg" alt="" width="200"> -->
+            <div class="w-100">
+                <h1>Ver Vocabularios</h1>
+                <p>
+                    Al acceder a esta opcion usted puede ver los vocabularios así como realizar consultas SparQL. También tiene la opción para que su sistema informático se conecte mediante su API Rest y cargar los vocabularios, todo siguiendo una ayuda simple.
+                </p>
+            </div>
+            <div class="row w-100 m-1">
+                <button class="btn"> Acceder </button>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="row center">
+        <div class="w-25">
+            <img src="assets/tocororo.png" alt="" width="150">
+        </div>
+        <div class='column w-25'>
+            <span style="text-align: justify">
+                Sceiba  busca mantener datos estandarizados, validados y por tanto confiables sobre los resultados de investigación en Cuba, de diferentes organizaciones de investigación, mayormente académicas.
+            </span>
+        </div>
+        <div class='row w-25 center'>
+            <a href="https://www.facebook.com/sceiba/" target="_blank" title="Facebook">
+                <img src="assets/facebook-w.svg" alt="FACEBOOK">
+            </a>
+            <a href="https://twitter.com/SceibaCu" target="_blank" title="Twitter">
+                <img src="assets/twitter-w.svg" alt="FACEBOOK">
+            </a>
+            <a href="https://github.com/tocororo/iroko" target="_blank" title="GitHub">
+                <img src="assets/github-w.svg" alt="FACEBOOK">
+            </a>
+        </div>
+        <span class="w-100" style="font-size: small; width: 100%; text-align: center;">
+            Sceiba es de código y acceso abierto y distribuyen sus contenidos, a no ser que se indique lo contrario, bajo la <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank" style="color: white;"> Licencia Creative Commons CC by 4.0 </a>
+        </span>
+
+    </footer>
+    <div class='column center'style="padding: 1em;">
+        <a href="https://sceiba.cu"style="color: rgb(0, 0, 0, 0.87); text-decoration: none;">
+            <img src="assets/sceiba-logo.png" alt="Sceiba" width="120">
+        </a>
+        <a href="https://sceiba.cu" style="color: rgb(0, 0, 0, 0.87); text-decoration: none; text-align: center;">
+            Portal de publicaciones cientificas cubanas.
+        </a>
+        <a href="https://invenio-software.org/" target="_blank" style="color: rgb(0, 0, 0, 0.87); text-decoration: none; text-align: center;">
+            Desarrollado con Invenio
+        </a>
+    </div>
+</body>
+</html>
